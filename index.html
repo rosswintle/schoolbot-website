@@ -1,11 +1,105 @@
 <!doctype>
 <html>
-  <head>
-    <title>
-      SchoolBot - Smart Parent Information
-    </title>
-  </head>
-  <body>
-    <h1>SchoolBot - Smart Parent Information</h1>
-  </body>
+  <title>
+    SchoolBot - Smart Parent Information
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Geostar+Fill&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --brand-black: hsl(197, 44%, 19%);
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 3em 0;
+      font-family: sans-serif;
+      color: var(--brand-black);
+    }
+
+    .container {
+      width: 100%;
+      margin: 0;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+
+    /* Font sizes */
+    .xl {
+      font-size: 3.5rem;
+    }
+
+    .large {
+      font-size: 2rem;
+    }
+
+    /* Padding */
+    .reset-padding {
+      padding: 0;
+    }
+
+    /* Margin */
+    .reset-margin {
+      margin: 0;
+    }
+
+    .large-margin {
+      margin-top: 2rem;
+    }
+
+    .medium-margin {
+      margin-top: 1.5rem;
+    }
+
+    header img {
+      display: inline-block;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    h1 {
+      font-family: 'Baloo Bhaina', sans-serif;
+      line-height: 1.2;
+    }
+
+    h2, h3, h4 {
+      font-family: 'Baloo Bhaina', sans-serif;
+      line-height: 1.2;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 5rem 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .xl {
+        font-size: 5rem;
+      }
+
+      .large {
+        font-size: 3rem;
+      }
+
+
+    }
+
+
+  </style>
+
+  <header class="container text-center">
+    <img src="images/schoolbot-centered-plain-orange.svg">
+    <h1 class="xl reset-margin large-margin">SchoolBot</h1>
+    <h2 class="large reset-margin">Smart Parent Information</h2>
+  </header>
 </html>
