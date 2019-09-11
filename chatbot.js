@@ -30,7 +30,7 @@ var chat = {
 		]
 	},
 	5: {
-		text: 'Hey, parent. Are you bombarded with information from you school?',
+		text: 'Hey, parent. Are you bombarded with information from your school?',
 		options: [
 			{
 				text: 'Why, yes, actually, I am!',
@@ -56,13 +56,19 @@ const bot = function () {
 	const scrollMain = function() {
 		main.scrollTop = main.scrollTopMax;
 	}
+
+	const insertNewChatItem = function(elem) {
+		main.insertBefore(elem, position);
+		scrollMain();
+		//debugger;
+		elem.classList.add('activated');
+	}
 	
 	const printResponse = async function (step) {
 		const response = document.createElement('div');
 		response.classList.add('chat-response');
 		response.innerHTML = step.text;
-		main.insertBefore(response, position);
-		scrollMain();
+		insertNewChatItem(response);
 		
 		await sleep(1500);
 		
@@ -76,8 +82,7 @@ const bot = function () {
 				button.dataset.next = option.next;
 				choices.append(button);
 			});
-			main.insertBefore(choices, position);
-			scrollMain();
+			insertNewChatItem(choices);
 		} else if (step.next) {
 			printResponse(chat[step.next]);
 		}
@@ -87,7 +92,7 @@ const bot = function () {
 		const choiceElem = document.createElement('div');
 		choiceElem.classList.add('chat-ask');
 		choiceElem.innerHTML = choice.innerHTML;
-		main.insertBefore(choiceElem, position);
+		insertNewChatItem(choiceElem);
 	}
 
 	const handleChoice = async function (e) {
