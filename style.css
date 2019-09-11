@@ -67,6 +67,7 @@ main {
   box-shadow: 2px 2px 5px hsl(0, 0%, 60%);
   padding: 1rem;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 header img {
