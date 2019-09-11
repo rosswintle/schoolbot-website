@@ -136,7 +136,7 @@ const bot = function () {
 				button.classList.add('choice');
 				button.innerHTML = option.text;
 				button.dataset.next = option.next;
-				choices.append(button);
+				choices.appendChild(button);
 			});
 			insertNewChatItem(choices);
 		} else if (step.next) {
