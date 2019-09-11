@@ -107,7 +107,9 @@ const bot = function () {
 
 	const sleep = function (ms) {
 		if ('Promise' in window) {
-  			return new Promise(resolve => setTimeout(resolve, ms));
+  			return new Promise(function (resolve) {
+  				return setTimeout(resolve, ms)
+  			});
   		} else {
   			return;
   		}
