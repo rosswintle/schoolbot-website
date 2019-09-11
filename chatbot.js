@@ -107,18 +107,18 @@ const bot = function () {
 
 	const sleep = function (ms) {
   		return new Promise(resolve => setTimeout(resolve, ms));
-	}
+	};
 
 	const scrollMain = function() {
 		main.scrollTop = main.scrollHeight;
-	}
+	};
 
 	const insertNewChatItem = function(elem) {
 		main.insertBefore(elem, position);
 		scrollMain();
 		//debugger;
 		elem.classList.add('activated');
-	}
+	};
 	
 	const printResponse = async function (step) {
 		const response = document.createElement('div');
@@ -142,14 +142,14 @@ const bot = function () {
 		} else if (step.next) {
 			printResponse(chat[step.next]);
 		}
-	}
+	};
 
 	const printChoice = function (choice) {
 		const choiceElem = document.createElement('div');
 		choiceElem.classList.add('chat-ask');
 		choiceElem.innerHTML = choice.innerHTML;
 		insertNewChatItem(choiceElem);
-	}
+	};
 
 	const disableAllChoices = function() {
 		const choices = document.querySelectorAll('.choice');
@@ -157,7 +157,7 @@ const bot = function () {
 			choice.disabled = 'disabled';
 		});
 		return;
-	} 
+	};
 
 	const handleChoice = async function (e) {
 
@@ -179,12 +179,12 @@ const bot = function () {
 			printResponse(chat[choice.dataset.next]);
 		}
 		// Need to disable buttons here to prevent multiple choices
-	}
+	};
 
 	const init = function () {
 		main.addEventListener('click', handleChoice);
 		printResponse(chat[1]);
-	}
+	};
 
 	init();
 }
