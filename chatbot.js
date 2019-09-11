@@ -21,25 +21,81 @@ var chat = {
 		next: 4
 	},
 	4: {
-		text: 'Which makes it hard to find, and difficult to update.',
+		text: 'Which makes it hard for parents to find, and difficult for you to update.',
 		options: [
 			{
 				text: 'Tell me more',
-				//next: 7
+				next: 16
 			}
 		]
 	},
 	5: {
-		text: 'Hey, parent. Are you bombarded with information from your school?',
+		text: 'Hey, parent. Do you struggle to find information about your school right when you need it?',
 		options: [
 			{
-				text: 'Why, yes, actually, I am!',
+				text: 'Why, yes, actually, I do!',
 				next: 6
+			},
+			{
+				text: 'No, everything\'s fine.',
+				next: 7
 			}
 		]
 	},
 	6: {
-		text: 'We know, we know. And we have a solution that helps both you and the school!'
+		text: 'It\'s a common problem. And we have a solution that helps both you and the school!',
+		options: [
+			{
+				text: 'Tell me more',
+				next: 9
+			}
+		]
+	},
+	7: {
+		text: 'Ah! Your school is obviously doing well with communication.',
+		next: 8
+	},
+	8: {
+		text: 'Do you want to find out about SchoolBot anyway?',
+		options: [
+			{
+				text: 'Yes please!',
+				next: 9
+			},
+			{
+				text: 'No thanks',
+				next: 15
+			}
+		]
+	},
+	9: {
+		text: 'Great!',
+		next: 10
+	},
+	10: {
+		text: 'SchoolBot is a Smart Parent Information system',
+		next: 11
+	},
+	11: {
+		text: 'You can read that as either "An information system for smart parents"...',
+		next: 12
+	},
+	12: {
+		text: '...or "A smart system that gets information to parents"',
+		next: 13
+	},
+	13: {
+		text: 'Or hopefully both!',
+		next: 14
+	},
+	14: {
+		text: 'More soon...this thing is still being built'
+	},
+	15: {
+		text: 'OK. Thanks for the chat.'
+	},
+	16: {
+		text: 'I will...someday...once I have been programmed with more data'
 	}
 };
 
