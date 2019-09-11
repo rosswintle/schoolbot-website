@@ -110,7 +110,7 @@ const bot = function () {
 	}
 
 	const scrollMain = function() {
-		main.scrollTop = main.scrollTopMax;
+		main.scrollTop = main.scrollHeight;
 	}
 
 	const insertNewChatItem = function(elem) {
