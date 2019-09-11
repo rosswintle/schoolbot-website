@@ -1,0 +1,163 @@
+:root {
+  --brand-black: hsl(197, 44%, 19%);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3rem 1rem;
+  font-family: sans-serif;
+  color: var(--brand-black);
+}
+
+@media (min-width: 800px) {
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Font sizes */
+.xl {
+  font-size: 3.5rem;
+}
+
+.large {
+  font-size: 2rem;
+}
+
+/* Padding */
+.reset-padding {
+  padding: 0;
+}
+
+/* Margin */
+.reset-margin {
+  margin: 0;
+}
+
+.large-margin {
+  margin-top: 2rem;
+}
+
+.medium-margin {
+  margin-top: 1.5rem;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px hsl(0, 0%, 60%);
+  padding: 1rem;
+  overflow: scroll;
+}
+
+header img {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Baloo Bhaina', sans-serif;
+  line-height: 1.2;
+}
+
+h2, h3, h4 {
+  font-family: 'Baloo Bhaina', sans-serif;
+  line-height: 1.2;
+}
+
+.chat-response,
+.chat-ask {
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 90%);
+  padding: 0.5rem 0.7rem;
+  line-height: 1.4;
+  color: black;
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+.chat-response {
+  margin-left: 22px;
+  position: relative;
+}
+.chat-response:before {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -26px;
+  top: 6px;
+  background-image: url(images/schoolbot-centered-plain-orange.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 100%;
+}
+.chat-ask {
+  background-color: hsl(207, 96%, 55%);
+  margin-right: 0;
+  margin-left: auto;
+  color: hsl(0, 0%, 100%);
+}
+.choices {
+  margin-top: 0.5rem;
+  margin-left: 22px;
+}
+.choice {
+  outline: none;
+  border: 1px solid hsl(0, 0%, 0%);
+  padding: 0.3rem 0.8rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+
+  body {
+    display: flex;
+  }
+
+  header {
+    width: 50vw;
+    margin-right: 5vw;
+  }  
+
+  main {
+    width: 45vw;
+  }
+
+  .xl {
+    font-size: 5rem;
+  }
+
+  .large {
+    font-size: 3rem;
+  }
+
+
+}
+
+

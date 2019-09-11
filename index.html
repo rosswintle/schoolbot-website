@@ -4,102 +4,45 @@
     SchoolBot - Smart Parent Information
   </title>
 
+  <!-- Open Graph -->
+
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="/images/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Geostar+Fill&display=swap" rel="stylesheet">
 
-  <style>
+  <link rel="stylesheet" href="style.css">
 
-    :root {
-      --brand-black: hsl(197, 44%, 19%);
-    }
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      padding: 3em 0;
-      font-family: sans-serif;
-      color: var(--brand-black);
-    }
-
-    .container {
-      width: 100%;
-      margin: 0;
-    }
+  <body>
     
-    .text-center {
-      text-align: center;
-    }
+    <header class="text-center">
+      <img src="images/schoolbot-centered-plain-orange.svg">
+      <h1 class="xl reset-margin large-margin">SchoolBot</h1>
+      <h2 class="large reset-margin">Smart Parent Information</h2>
+    </header>
 
-    /* Font sizes */
-    .xl {
-      font-size: 3.5rem;
-    }
+    <main id="main">
+      <div id="chat-position"></div>
+    </main>
 
-    .large {
-      font-size: 2rem;
-    }
+    <script type="text/javascript" src="chatbot.js"></script>
 
-    /* Padding */
-    .reset-padding {
-      padding: 0;
-    }
-
-    /* Margin */
-    .reset-margin {
-      margin: 0;
-    }
-
-    .large-margin {
-      margin-top: 2rem;
-    }
-
-    .medium-margin {
-      margin-top: 1.5rem;
-    }
-
-    header img {
-      display: inline-block;
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-    }
-
-    h1 {
-      font-family: 'Baloo Bhaina', sans-serif;
-      line-height: 1.2;
-    }
-
-    h2, h3, h4 {
-      font-family: 'Baloo Bhaina', sans-serif;
-      line-height: 1.2;
-    }
-
-    @media (min-width: 768px) {
-      body {
-        padding: 5rem 0;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      
-      .xl {
-        font-size: 5rem;
-      }
-
-      .large {
-        font-size: 3rem;
-      }
-
-
-    }
-
-
-  </style>
-
-  <header class="container text-center">
-    <img src="images/schoolbot-centered-plain-orange.svg">
-    <h1 class="xl reset-margin large-margin">SchoolBot</h1>
-    <h2 class="large reset-margin">Smart Parent Information</h2>
-  </header>
+  </body>
 </html>
