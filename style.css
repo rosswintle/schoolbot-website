@@ -140,6 +140,10 @@ h2, h3, h4 {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
+.choice:disabled {
+  color: hsl(0, 0%, 80%);
+  border-color: hsl(0, 0%, 80%);
+}
 .activated {
   opacity: 1;
   transform: translateY(0);

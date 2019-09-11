@@ -95,10 +95,25 @@ const bot = function () {
 		insertNewChatItem(choiceElem);
 	}
 
+	const disableAllChoices = function() {
+		const choices = document.querySelectorAll('.choice');
+		choices.forEach( function(choice) {
+			choice.disabled = 'disabled';
+		});
+		return;
+	} 
+
 	const handleChoice = async function (e) {
+
+		if (! e.target.classList.contains('choice')) {
+			return;
+		}
+
 		e.preventDefault();
 		const choice = e.target;
-		
+
+		disableAllChoices();
+
 		printChoice(choice);
 		scrollMain();
 		
