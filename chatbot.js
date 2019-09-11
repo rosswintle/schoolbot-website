@@ -106,13 +106,7 @@ const bot = function () {
 	const main = document.getElementById('main');
 
 	const sleep = function (ms) {
-		if ('Promise' in window) {
-  			return new Promise(function (resolve) {
-  				return setTimeout(resolve, ms)
-  			});
-  		} else {
-  			return;
-  		}
+  		return new Promise(resolve => setTimeout(resolve, ms));
 	}
 
 	const scrollMain = function() {
